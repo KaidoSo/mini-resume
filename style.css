@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    background-color: #c7e3f2;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h3, h4 {
+    font-weight: 400;
+    display: inline-block;
+}
+
+h1 {
+    color: #383838;
+    margin: 11px 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    display: inline-block;
+    padding: 16px 0px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+ul {
+    display: inline-block;
+    padding: 16px 8px;
+    line-height: 2;
+    list-style-type: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+a {
+    color: #fff;
+}
+
+#container {
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+#main {
+    position: relative;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 38px 0px 16px 0px;
+}
+
+.hero-image {
+    background-image: url('https://minimalresume.carrd.co/assets/images/image01.jpg?v=4cfcdb81');
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+.name-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title {
+    display: block;
+    color:#9c9e9c;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.section-1 {
+    background-color: #4299ff;
+    padding: 16px;
+}
+
+.section-2 {
+    background-color: #3288ed;
+    padding: 16px;
+}
+
+.section-3 {
+    background-color: #277de3;
+    padding: 16px;
+}
+
+.section-title:nth-of-type(1) {
+    color: #fff;
+}
+
+.title-wrapper {
+    border-bottom: 1px solid rgba(255,255,255,0.259);
+}
+
+.section-title {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.fa-stack {
+    font-size: .5rem;
+    padding-right: 10px;
+}
+
+.buttons {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.buttons li {
+    display: flex;
+    display: inline-block;
+    margin: 0 5px 6px 0;
+}
+.buttons li a {
+    display: flex;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.259);
+    border-radius: 5px;
+    align-items: center;
+    padding: .2rem 1rem;
+    max-width: 100%;
+}
+
+.buttons li a i{
+    padding-right: 10px;    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    p {
+        padding: 0;
+    }
+
+    p, ul {
+        padding: 0;
+    }
+
+    .buttons {
+        margin: 0;
+        padding-left: 2rem;
+    }
+    
+    .section {
+        flex-direction: row;
+        padding: 44px;
+    }
+
+    .title-wrapper {
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.259);
+        padding-right: 1.5rem;
+        margin-right: 1rem;
+        min-width: 133px;
+        text-align: right;
+    }
+
+    .body-text {
+        padding: 0 25px;
+    }
+}
